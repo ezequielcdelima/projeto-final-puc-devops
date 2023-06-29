@@ -1,7 +1,8 @@
 import re
 
+
 def validar_cpf(cpf):
-    cpf =  re.sub(u'[^0-9]', '', cpf)
+    cpf = re.sub(u'[^0-9]', '', cpf)
 
     if len(cpf) != 11 or not cpf.isdigit():
         return {'cpf': cpf, 'valido': False}
@@ -21,5 +22,3 @@ def validar_cpf(cpf):
         return {'cpf': cpf, 'valido': False}
 
     return {'cpf': cpf, 'valido': True}
-
- 
