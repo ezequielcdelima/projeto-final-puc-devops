@@ -1,13 +1,10 @@
 import re
+
 def validar_cpf(cpf):
     cpf =  re.sub(u'[^0-9]', '', cpf)
 
     if len(cpf) != 11 or not cpf.isdigit():
         return {'cpf': cpf, 'valido': False}
-
-    # Verifica se todos os dígitos são iguais
-    #if cpf == cpf[0] * 11:
-    #    return {'cpf': cpf, 'valido': False}
 
     # Verifica o primeiro dígito verificador
     soma = sum(int(cpf[i]) * (10 - i) for i in range(9))
