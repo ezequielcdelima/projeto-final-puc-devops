@@ -2,6 +2,13 @@ import re
 
 
 def validar_cpf(cpf):
+    """
+    Checks if the CPF informed by is a valid or invalid CPF.
+
+    :param string: CPF
+    :return dict: CPF numbering and true if valid CPF or false if invalid CPF.
+    """
+
     cpf = re.sub(u'[^0-9]', '', cpf)
 
     if len(cpf) != 11 or not cpf.isdigit():
