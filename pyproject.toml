@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "devopsvalidatecpf"
-version = "0.0.2"
+version = "0.0.3"
 authors = [
   { name="Ezequiel Lima", email="ezequiel_lima@hotmail.com" },
 ]
