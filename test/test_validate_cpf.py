@@ -1,7 +1,7 @@
 from validate import validate_cpf
 
 
-def teste_cpf_sequencial():
+def test_cpf_seq():
     cpf = '11111111112'
     valida = validate_cpf.validar_cpf(cpf)
     if valida['valido']:
